@@ -1,0 +1,18 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo reboot
+    4  sudo apt update
+    5  sudo apt autoremove
+    6  mkdir ~/week1
+    7  cd ~/mkdir
+    8  cd ~/week1
+    9  ls /usr/bin | grep -l 'gcc' | sort -r > ~/week1/ex1.txt
+   10  ls /usr/bin | grep -l 'gcc' 
+   11  ls /usr/bin 
+   12  ls /usr/bin grep -l 'gcc' 
+   13  ls /usr/bin grep -l 'gcc' | sort -r 
+   14  ls /usr/bin grep -l 'gcc' | sort -r > ~/week1/ex1.txt
+   15  cd ~/week1
+   16  ls /usr/bin | grep 'gcc' | sort -r
+   17  ls /usr/bin | grep 'gcc' | sort -r > ~/week1/ex1.txt
+   18  history > ex2.txt
