@@ -19,12 +19,12 @@ int main() {
 	if (pid < 0)
 		exit(1);
 	else {
-		if (pid == 0) {
+		if (pid > 0) {
 			close(fd[0]);
 			write(fd[1], string_in, strlen(string_in));
 		}
 
-		else if (pid > 0) {
+		else if (pid == 0) {
 			close(fd[1]);
 			read(fd[0], string_out, strlen(string_in));
 			printf("string_out = %s\n", string_out);
