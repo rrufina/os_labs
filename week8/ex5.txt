@@ -1,0 +1,1 @@
+A physical address is a real address in hardware (RAM), otherwise, a virtual address is an abstraction in OS, which uses pages for memory location.
