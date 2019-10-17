@@ -1,0 +1,9 @@
+To increase Hit/Miss ratio for a sequence of 1000 pages for N page frame, we can use the followinf sequence:
+1, 2, ..., N, 1, 2, ..., N, 1, 2, ...
+For that we will have Miss = N, and Hit = 1000 - N (the smaller N, the larger Hit/Miss)
+Also we can use:
+1, 1, ..., 1 (no matter what exactly number, the case is that it is always the same number) - so, Miss = 1, Hit = 999. Hit/Miss = 999.
+
+To decrease Hit/Miss ration we can use the following sequence:
+1, 2, 3, ..., 1000.
+Miss = 1000, Hit = 0. Hit/Miss = 0.
