@@ -1,0 +1,6 @@
+> link  ../week1/file.txt _ex2.txt
+> ls -i _ex2.txt
+671197 _ex2.txt
+> link  ../week1/file.txt _ex2.txt
+../week1/file.txt
+> link  ../week1/file.txt _ex2.txt

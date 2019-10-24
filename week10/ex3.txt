@@ -1,0 +1,24 @@
+> ls -l _ex3.txt
+-rw-r--r-- 1 rufina rufina 0 окт 24 21:14 _ex3.txt
+
+Remove execute permission for everybody:
+-- nobody has execute permission
+
+Grant all permissions to owner and others (not group):
+> chmod 747 _ex3.txt
+> ls -l _ex3.txt
+-rwxr--rwx 1 rufina rufina 0 окт 24 21:14 _ex3.txt
+
+Make group permissions equal to user permissions:
+> chmod g=u _ex3.txt
+> ls -l _ex3.txt
+-rwxrwxrwx 1 rufina rufina 0 окт 24 21:14 _ex3.txt
+
+What does 660 mean for ex3.txt?
+Owner and group have read and write permissions, user has no permission.
+
+What does 775 mean for ex3.txt?
+Owner and group have read, write and execute permissions, user has read and execute permissions.
+
+What does 777 mean for ex3.txt?
+All (owner, group, user) have all permissions - read, write, execute.
