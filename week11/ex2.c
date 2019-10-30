@@ -5,7 +5,7 @@
 int main() {
 	setvbuf(stdout, NULL, _IOLBF, MAX_SIZE);
 	
-	printf("H");\
+	printf("H");
 	sleep(1);
 	printf("e");
 	sleep(1);
