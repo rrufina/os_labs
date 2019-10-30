@@ -9,7 +9,6 @@
 
 int main() {
 	struct stat buf_src, buf_dst;
-	//char *src, *dst;
 
 	//for source file
 	int fd_src = open("ex1.txt", O_RDWR);
@@ -41,6 +40,9 @@ int main() {
 	ftruncate(fd_dst, buf_src.st_size);
 
 	memcpy(dst, src, buf_src.st_size);
+
+	close(fd_src);
+	close(fd_dst);
 
 	return 0;
 }
