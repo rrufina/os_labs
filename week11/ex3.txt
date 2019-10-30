@@ -1,0 +1,15 @@
+Program 1 output: Hello \n Hello \n
+
+>Hello
+>Hello
+
+Program 2 output: Hello \n \n \n
+
+>Hello
+>
+>
+
+Explanation:
+Child process inherits buffer from its parent.
+For program1 buffer is "Hello", so child prints "Hello\n" and parent prints the same.
+For program2 buffer is empty, so child prints "\n" and parent prints "Hello\n\n".
